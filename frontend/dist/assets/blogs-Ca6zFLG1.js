@@ -1,0 +1,1 @@
+import{j as s}from"./index-CfsJ0GSq.js";import{O as o}from"./blogs-DaR91s-g.js";import{C as r}from"./ContactForm-CxMhq7VF.js";import"./index.esm-DULyjJBF.js";const e=()=>s.jsx("div",{className:"container mx-auto mb-10",children:s.jsxs("div",{className:"sm:px-0  lg:py-10",children:[s.jsx(o,{}),s.jsx(r,{})]})});export{e as default};
