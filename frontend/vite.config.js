@@ -4,6 +4,7 @@ import { imagetools } from "vite-imagetools";
 
 export default defineConfig({
   build: {
+    emptyOutDir: true,
     outDir: "dist", // Ensure the output is being written to the dist folder
   },
   base: "/",
