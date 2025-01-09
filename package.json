@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon backend/server.js",
-    "server": "node backend/server.js",
+    "server": "node backend/api/index.js",
    "start": "concurrently \"node backend/server.js\" \"npm --prefix frontend dev\""
   },
   "type": "module",

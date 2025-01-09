@@ -10,4 +10,4 @@ app.get("/", (req, res) => {
 });
 
 // Export the app
-module.exports = app;
+export default app;
