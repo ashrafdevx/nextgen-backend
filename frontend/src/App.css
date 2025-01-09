@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Rubik:wght@400;700&display=swap");
+/* globals.css */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&family=Rubik+Sans:wght@400;500;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global css */
+/* globals.css or in your Tailwind classes */
+h1 {
+  @apply font-rubik;
+}
+
+p {
+  @apply font-quicksand;
+}
+
+button {
+  @apply font-quicksand;
+}
+
+/*  */
+.slick-next:before{
+  font-size: 40px;
+}
+
+.slick-arrow.slick{
+  font-size: 50px;
+}
