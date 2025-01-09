@@ -1,26 +1,42 @@
+import React, { Suspense, useEffect, useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-
-import About from "./pages/about/about";
-import PrivacyPolicy from "./pages/privacyPolicy";
-import Blogs from "./pages/blogs";
-import Header from "./component/header";
-import Footer from "./component/footer";
-import Services from "./pages/services/services";
-import IndividualAndHomeOwner from "./pages/services/individualAndHomeOwner/index";
-import InvesterAndFundManagers from "./pages/services/InvesterAndFundManagers";
-import EstateInvestmentAndManagement from "./pages/services/estateInvesterManagement";
-import Portfolio from "./pages/portfolio";
-import PortfolioDevelopmentMain from "./pages/portfolio/DevelopmentPortfolio/RealEstatePortfolioDevelopment";
-import InvestmentPortfolioMain from "./pages/portfolio/InvestmenttPortfolio/RealEstatePortfolioInvestment";
-import Home from "./pages/home/home";
-import LoginPage from "./pages/login/login";
-import PropertyListing from "./pages/portfolio/DevelopmentPortfolio/developPortfolioById";
-import InvestmentPortfolioById from "./pages/portfolio/InvestmenttPortfolio/investmentPortfolioById";
-import ContactUs from "./pages/contactUs/contactUs";
 import TawkToWidget from "./utils/tawk";
-import { useEffect, useState } from "react";
 import { ArrowUp } from "lucide-react";
+// Lazy load components
+const About = React.lazy(() => import("./pages/about/about"));
+const PrivacyPolicy = React.lazy(() => import("./pages/privacyPolicy"));
+const Blogs = React.lazy(() => import("./pages/blogs"));
+const Header = React.lazy(() => import("./component/header"));
+const Footer = React.lazy(() => import("./component/footer"));
+const Services = React.lazy(() => import("./pages/services/services"));
+const IndividualAndHomeOwner = React.lazy(() =>
+  import("./pages/services/individualAndHomeOwner/index")
+);
+const InvesterAndFundManagers = React.lazy(() =>
+  import("./pages/services/InvesterAndFundManagers")
+);
+const EstateInvestmentAndManagement = React.lazy(() =>
+  import("./pages/services/estateInvesterManagement")
+);
+const Portfolio = React.lazy(() => import("./pages/portfolio"));
+const PortfolioDevelopmentMain = React.lazy(() =>
+  import(
+    "./pages/portfolio/DevelopmentPortfolio/RealEstatePortfolioDevelopment"
+  )
+);
+const InvestmentPortfolioMain = React.lazy(() =>
+  import("./pages/portfolio/InvestmenttPortfolio/RealEstatePortfolioInvestment")
+);
+const Home = React.lazy(() => import("./pages/home/home"));
+const LoginPage = React.lazy(() => import("./pages/login/login"));
+const PropertyListing = React.lazy(() =>
+  import("./pages/portfolio/DevelopmentPortfolio/developPortfolioById")
+);
+const InvestmentPortfolioById = React.lazy(() =>
+  import("./pages/portfolio/InvestmenttPortfolio/investmentPortfolioById")
+);
+const ContactUs = React.lazy(() => import("./pages/contactUs/contactUs"));
 
 function App() {
   const [showScrollButton, setShowScrollButton] = useState(false);

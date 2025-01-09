@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "nodemon backend/server.js",
     "server": "node backend/server.js",
-     "start": "concurrently \"npm --prefix backend start\" \"npm --prefix frontend start\""
+   "start": "concurrently \"node backend/server.js\" \"npm --prefix frontend dev\""
   },
   "type": "module",
   "repository": {
