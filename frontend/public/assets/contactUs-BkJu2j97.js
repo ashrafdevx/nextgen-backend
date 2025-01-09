@@ -1,0 +1,1 @@
+import{j as t}from"./index-CfsJ0GSq.js";import{C as s}from"./ContactForm-CxMhq7VF.js";import"./index.esm-DULyjJBF.js";const a=()=>t.jsxs("div",{className:" p-4 md:p-8",children:[" ",t.jsx(s,{})]});export{a as default};
